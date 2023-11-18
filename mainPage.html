@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="./css/mainPage.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Roboto+Flex:opsz,wght@8..144,100&display=swap"
+        rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer type="module" src="/js/appAllCountrys.js"></script>
+    <script type="module" src="/js/searchCountry.js"></script>
+
+</head>
+
+<body>
+    <header class="container-fluid d-flex">
+        <div class="container">
+            <div class="logo">
+                <h1>ATLAS</h1>
+            </div>
+            <nav class="d-flex">
+                <button id="countryInputbtn1">
+                    <p id="countryInput1" class="israel">ISRAEL</p>
+                </button>
+                <button id="countryInputbtn2">
+                    <p id="countryInput2" class="usa">USA</p>
+                </button>
+                <button id="countryInputbtn3">
+                    <p id="countryInput3" class="thailand">THAILAND</p>
+                </button>
+                <button id="countryInputbtn4">
+                    <p id="countryInput4" class="france">FRANCE</p>
+                </button>
+            </nav>
+            <div class=" select d-md-flex justify-content-end pe-1 pb-2 pb-md-0 col-2">
+                <select id="id_select_country" class="form-select " aria-label="Default select example">
+                    <option value="0" id="id_option" selected>Choose Country </option>
+                </select>
+            </div>
+
+            <div class="search col-2">
+                <div class=" d-flex p-2">
+                    <input placeholder="" id="id_input"  class="form-control col-1">
+                    <button id="search_btn" class="btn btn-dark ">Search</button>
+                </div>
+            </div>
+        </div>
+    </header>
+   
+
+    <main class="container-fluid ">
+
+        <div id="id_row" class="row  p-5 justify-content-center ">
+            <div id="id_borders"></div>
+        </div>
+    </main>
+    <footer>
+        © shira-aviram | ATLAS
+    </footer>
+</body>
+
+</html>

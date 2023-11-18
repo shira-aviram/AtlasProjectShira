@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    width: 100%; 
+}
+
+
+.container-fluid{
+    width: 100%; 
+    font-family: 'Rajdhani', sans-serif;
+}
+header{
+    background-color: #95c5c8;
+    border-bottom: 2px solid #386e72;
+    height: 90px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    position: sticky;
+    z-index: 100;
+    top:0;
+    /* #386e72 #95c5c8 #f0c0aa */
+
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav button{
+    background-color: #95c5c8;
+    border: none;
+  }
+  header nav p {
+  
+    text-decoration: none;
+    padding: 0 30px;
+    color:#386e72;
+    height: 48px;
+    font-size: 1.5em;
+    display: inline-flex;
+    align-items: center;
+
+  }
+ header nav p:hover{
+   
+    color:black; 
+  } 
+
+header .logo{
+    padding: 60px;  
+    color:#386e72;
+}
+#search_btn{
+   background-color:#386e72;
+   border: none;
+}
+
+ main{
+    text-align: left;
+    background-image: url(/img/globe2.jpg);
+    background-size: cover;
+    background-position: 100%;
+} 
+
+.row .box{
+    background: #386e72bc;
+    border: 2px solid #386e72;
+    border-radius: 20px;
+    color:#b6f2f6;
+    min-height: 700px;
+
+}
+.row div img{
+    max-height: 220px;
+    max-width: 320px;
+
+    }
+ 
+main .btnBack{
+
+   border: 1px solid #386e72;
+   background-color: #95c5c843;
+    border-radius: 10px;
+   padding: 10px;
+    width: 150px;
+    height: 50px;
+    margin-top:  40px;
+    
+}
+
+main .btnBack a{
+   text-decoration: none; 
+   color: white;
+}
+footer{
+    background: #386e72;
+    color:#95c5c8;
+    height: 70px;
+    padding: 20px;
+}
+@media (max-width:992px){
+  
+}
+@media (max-width:992px){
+  
+      
+      header{
+        border:none;
+      
+      }
+      header nav {
+      
+        position: absolute;
+        height: 50px;
+        right:0;
+        top:90px;
+        border-bottom: 2px solid #386e72;
+         
+      }
+      /* header .search {
+        position: absolute;
+        left:0;
+        top:150px;
+        max-width: 60px;   
+      } */
+
+    .row .box{
+        height: 800px;
+    }
+    .row .box div{
+       flex-wrap: wrap;
+      
+    } 
+    .row .box iframe{
+       height: 30%;
+    }
+
+}
